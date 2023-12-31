@@ -3,4 +3,9 @@ interface DownloadButtonProps {
     filePath: string;
 }
 
-export type {DownloadButtonProps};
+interface NavButtonProps {
+    title: string;
+    url: string;
+}
+
+export type {DownloadButtonProps, NavButtonProps};

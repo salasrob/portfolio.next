@@ -1,7 +1,7 @@
 
 const DefaultFooter: React.FC = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
@@ -9,13 +9,12 @@ const DefaultFooter: React.FC = () => {
                            <a href="https://www.linkedin.com/in/robertsalas/">LinkedIn</a>
                         </div>
                         <p className="pt-3 text-center">
-                            Copyright&copy;
-                            {new Date().getFullYear()}&nbsp;Robert Salas | All Rights Reserved
+                            Designed on paper and built with Next.js and Tailwind CSS, deployed with Azure by Robert Salas.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 
