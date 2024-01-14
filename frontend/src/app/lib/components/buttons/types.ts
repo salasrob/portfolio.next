@@ -1,11 +1,11 @@
-interface DownloadButtonProps {
+interface LinkProps {
     title: string;
-    filePath: string;
+    href: string;
 }
 
-interface NavButtonProps {
-    title: string;
-    url: string;
+interface SocialProps extends LinkProps{
+    viewBox: string;
+    src: string;
 }
 
-export type {DownloadButtonProps, NavButtonProps};
+export type {LinkProps, SocialProps};

@@ -13,5 +13,5 @@ const Article: React.FC<ArticleProps> = ({ title, subtitle, author, date, sectio
     </article>
   );
 };
-
+  
 export default Article;
