@@ -38,8 +38,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 TODO:
-Finish card component
-Create archive page
-Make Table component with headers and row components
-Create ViewModel
+Get JSON from express backend
 

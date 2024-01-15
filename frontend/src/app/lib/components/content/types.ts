@@ -1,10 +1,12 @@
-import Badge from "../experienceSection/badge";
-
 interface CardProps {
     title: string;
     date?: string;
     subtitle?: string;
     description?: string;
+    attachments?:[{
+        title: string;
+        href: string;
+    }];
     badges?: [{
         label: string;
     }];
@@ -14,12 +16,17 @@ interface CardProps {
     };
 }
 
-// Dates (optional)
-// Images (optional)
-// Title
-// Subtitle (optional)
-// Description (optional)
-// Attachments (basically a link) (optional)
-// Badges (optional)
+interface BadgeProps {
+    label: string;
+}
 
-export type { CardProps };
+interface LandingPageSectionProps{
+    header: string;
+    contentComponents: CardProps[];
+    externalLink?: {
+        title: string;
+        href: string;
+    };
+}
+
+export type { BadgeProps, CardProps, LandingPageSectionProps };

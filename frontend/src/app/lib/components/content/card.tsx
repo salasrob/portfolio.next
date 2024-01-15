@@ -1,7 +1,9 @@
+import Attachment from "../buttons/attachment";
 import ExternalPageNavigation from "../buttons/externalPageNavigation";
+import Badge from "./badge";
 import { CardProps } from "./types";
 
-const Card: React.FC<CardProps> = ({ title, subtitle, description, date, image }) => {
+const Card: React.FC<CardProps> = ({ title, subtitle, description, date, image, badges, attachments }) => {
   return (
     <li className="mb-12">
       <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -21,14 +23,20 @@ const Card: React.FC<CardProps> = ({ title, subtitle, description, date, image }
             : null}
         </h3>
           {description ? <p className="mt-2 text-sm leading-normal">{description}</p> : null}
-          <ul className="mt-2 flex flex-wrap" aria-label="Related links">
-            {/* Map attachments here if none dont show*/}
-          </ul>
-          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-            {/* Map badges here if none dont show*/}
-          </ul>
+
+          {(attachments != null || attachments != undefined) && attachments.length > 0 ?
+            <ul className="mt-2 flex flex-wrap" aria-label="Related links">
+              {attachments?.map((element, index) => <Attachment key={index} title={element.title} href={element.href} />)}
+            </ul>
+            : null}
+
+          {badges != undefined && badges.length > 0 ?
+            <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+              {badges?.map((element, index) => <Badge key={index} label={element.label} />)}
+            </ul>
+            : null}
         </div>
-        {image ? <img className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" alt="" data-nimg="1" decoding="async" loading="lazy" width="200" height="48" /> : null}
+        {image?.src ? <img className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" alt="" data-nimg="1" decoding="async" loading="lazy" width="200" height="48" /> : null}
       </div>
     </li>
   );

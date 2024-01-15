@@ -1,5 +1,4 @@
-import { BadgeProps } from "./types";
-
+import { BadgeProps } from "../content/types";
 
 const Badge: React.FC<BadgeProps> = ({ label }) => {
   return (
@@ -8,7 +7,6 @@ const Badge: React.FC<BadgeProps> = ({ label }) => {
             {label}
         </div>
     </li>
-
   );
 };
   
