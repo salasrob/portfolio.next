@@ -1,5 +1,7 @@
 interface CardProps {
     title: string;
+    href?: string;
+    company?: string;
     date?: string;
     subtitle?: string;
     description?: string;
@@ -29,4 +31,9 @@ interface LandingPageSectionProps{
     };
 }
 
-export type { BadgeProps, CardProps, LandingPageSectionProps };
+interface TableProps {
+    columnLabels: string[];
+    contentComponents: CardProps[];
+}
+
+export type { BadgeProps, CardProps, LandingPageSectionProps, TableProps };

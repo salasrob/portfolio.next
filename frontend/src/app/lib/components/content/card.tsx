@@ -3,7 +3,7 @@ import ExternalPageNavigation from "../buttons/externalPageNavigation";
 import Badge from "./badge";
 import { CardProps } from "./types";
 
-const Card: React.FC<CardProps> = ({ title, subtitle, description, date, image, badges, attachments }) => {
+const Card: React.FC<CardProps> = ({ title, href, company, subtitle, description, date, image, badges, attachments }) => {
   return (
     <li className="mb-12">
       <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ title, subtitle, description, date, image, 
         {date ? <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="July to December 2015">{date}</header> : null}
         <div className="z-10 sm:col-span-6"><h3 className="font-medium leading-snug text-slate-200">
           <div>
-            <ExternalPageNavigation title={title} href="/" />
+            <ExternalPageNavigation title={title + " - " + company} href={href ?? "/"} />
           </div>
           {subtitle ?
             <div>
