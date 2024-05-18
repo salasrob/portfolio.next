@@ -1,6 +1,7 @@
 interface CardProps {
     title: string;
     href?: string;
+    download: boolean;
     company?: string;
     date?: string;
     subtitle?: string;
@@ -8,6 +9,7 @@ interface CardProps {
     attachments?:[{
         title: string;
         href: string;
+        download: boolean;
     }];
     badges?: [{
         label: string;
@@ -28,6 +30,7 @@ interface LandingPageSectionProps{
     externalLink?: {
         title: string;
         href: string;
+        download: boolean;
     };
 }
 

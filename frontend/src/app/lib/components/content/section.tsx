@@ -17,6 +17,7 @@ const Section: React.FC<LandingPageSectionProps> = ({ header, contentComponents,
                 <Card key={index}
                   title={element.title}
                   href={element.href}
+                  download={element.download}
                   company={element.company}
                   date={element.date}
                   subtitle={element.subtitle}
@@ -26,7 +27,7 @@ const Section: React.FC<LandingPageSectionProps> = ({ header, contentComponents,
                   image={element.image} />)}
         </ol>
         {externalLink ?
-          <ExternalPageNavigation title={externalLink.title} href={externalLink.href} />
+          <ExternalPageNavigation title={externalLink.title} href={externalLink.href} download={externalLink.download} />
           : null}
       </div>
     </section>

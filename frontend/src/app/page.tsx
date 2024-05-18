@@ -23,12 +23,12 @@ export default function Home() {
             <p className="mt-4 max-w-xs leading-normal">I build accessible, performant, and engaging experiences for desktop and the web.</p>
             <nav>
               <ul className="mt-16 w-max">
-                {data.internalNavigationLinks.map((element: any, index: any) => <InsidePageNavigation key={index} title={element.title} href={element.href} />)}
+                {data.internalNavigationLinks.map((element: any, index: any) => <InsidePageNavigation key={index} title={element.title} href={element.href} download={element.download} />)}
               </ul>
             </nav>
           </div>
           <ul className="ml-1 mt-8 flex items-center">
-            {data.socialLinks.map((element: any, index: any) => <SocialLink key={index} title={element.title} href={element.href} viewBox={element.viewBox} src={element.src} />)}
+            {data.socialLinks.map((element: any, index: any) => <SocialLink key={index} title={element.title} href={element.href} viewBox={element.viewBox} src={element.src} download={element.download} />)}
           </ul>
         </header>
         <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
@@ -39,14 +39,14 @@ export default function Home() {
             <div>
               <p>Shortly after leaving the U.S. Army I decided to go back to college. Four years later I was completing an MBA program and decided to jump into coding and never looked back. Today, I design and build accessible, performant, and engaging experiences for Windows Shell.
               </p>
-              <p>I value building things that are useful and that can be used by everyone. Data privacy, Safe and responsible use of Artificial Intelligence, and contributing to empowering humans is important to me.
+              <p>I value building things that are useful and that can be used by everyone. Data privacy, safe and responsible use of Artificial Intelligence, and contributing to empowering humans is important to me.
               </p>
               <p>
                 When I'm not working, I'm usually practicing Brazilian Jiu Jitsu, hiking, playing with legos with my kids, or playing computer games.
               </p>
             </div>
           </section>
-          {data.sections.map((element: any, index: any) => <Section key={index} header={element.header} contentComponents={element.contentComponents} externalLink={element.externalLink}/>)}
+          {data.sections.map((element: any, index: any) => <Section key={index} header={element.header} contentComponents={element.contentComponents} externalLink={element.externalLink} />)}
           <DefaultFooter/>
         </main>
       </div>

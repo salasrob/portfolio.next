@@ -1,6 +1,7 @@
 interface LinkProps {
     title: string;
     href: string;
+    download: boolean;
 }
 
 interface SocialProps extends LinkProps{

@@ -1,42 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Ah the README
+
+Hello! Welcome to yet another README. I'll keep it short and sweet.
+
+This awesome design was originally created by [Brittany Chiang](https://brittanychiang.com/). I created it from scratch and used her CSS. I took out some things I didn't need. If you use this code for your portfolio please make sure to give credit to Brittany Chiang. 
+
+I used [Next.js](https://nextjs.org/docs), [Typescript](https://www.typescriptlang.org/), and [Tailwinds CSS](https://tailwindcss.com/).
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. To run development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Add your own awesome experience to it
+- Update the Hero text and short intro in page.tsx. The rest comes from a config file that acts as a data source.
+- Add your own portfolio.json config as a data source for the portfolio web app. I've included a sample schema in /Public folder.
+- Add a PDF of your resume in the /Public folder
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Add in more features :). Don't forget to give credit to Brittany Chiang!!
 
 
-
-TODO:
-Get JSON from express backend
 
