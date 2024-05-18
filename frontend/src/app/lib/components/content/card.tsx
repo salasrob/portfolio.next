@@ -2,6 +2,7 @@ import Attachment from "../buttons/attachment";
 import ExternalPageNavigation from "../buttons/externalPageNavigation";
 import Badge from "./badge";
 import { CardProps } from "./types";
+import Image from "next/image";
 
 const Card: React.FC<CardProps> = ({ title, href, download, company, subtitle, description, date, image, badges, attachments }) => {
   return (
@@ -36,7 +37,7 @@ const Card: React.FC<CardProps> = ({ title, href, download, company, subtitle, d
             </ul>
             : null}
         </div>
-        {image?.src ? <img className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" alt="" data-nimg="1" decoding="async" loading="lazy" width="200" height="48" /> : null}
+        {image?.src ? <Image className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"  src={image.src} alt="" data-nimg="1" decoding="async" loading="lazy" width="200" height="48" /> : null}
       </div>
     </li>
   );

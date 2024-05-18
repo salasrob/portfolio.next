@@ -42,7 +42,7 @@ export default function Home() {
               <p>I value building things that are useful and that can be used by everyone. Data privacy, safe and responsible use of Artificial Intelligence, and contributing to empowering humans is important to me.
               </p>
               <p>
-                When I'm not working, I'm usually practicing Brazilian Jiu Jitsu, hiking, playing with legos with my kids, or playing computer games.
+                When I&apos;m not working, I&apos;m usually practicing Brazilian Jiu Jitsu, hiking, playing with legos with my kids, or playing computer games.
               </p>
             </div>
           </section>
