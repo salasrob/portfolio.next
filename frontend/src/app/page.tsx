@@ -20,7 +20,7 @@ export default function Home() {
             <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
               {data.jobTitle} at {data.company}
             </h2>
-            <p className="mt-4 max-w-xs leading-normal">I build accessible, performant, and engaging experiences for desktop and the web.</p>
+            <p className="mt-4 max-w-xs leading-normal">I build performant and engaging experiences for desktop and the web.</p>
             <nav>
               <ul className="mt-16 w-max">
                 {data.internalNavigationLinks.map((element: any, index: any) => <InsidePageNavigation key={index} title={element.title} href={element.href} download={element.download} />)}
