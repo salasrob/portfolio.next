@@ -32,8 +32,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-, "src/app/data/portfolioJson.js"  ],
+    ".next/types/**/*.ts",
+    "src/app/data/portfolioJson.js",
+    "dist/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
