@@ -8,6 +8,13 @@ import DefaultFooter from "./lib/components/footers/defaultFooter";
 let file = await fs.readFile(process.cwd() + '/public/portfolio.json', 'utf8');
 let data = JSON.parse(file);
 
+function mapLandingPageSections(element:any, index:number) {
+  if (element.isLandingPageSection){
+    return <Section key={index} header={element.header} contentComponents={element.contentComponents} externalLink={element.externalLink}/>;
+  }
+  return null;
+}
+
 export default function Home() {
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
@@ -46,7 +53,7 @@ export default function Home() {
               </p>
             </div>
           </section>
-          {data.sections.map((element: any, index: any) => <Section key={index} header={element.header} contentComponents={element.contentComponents} externalLink={element.externalLink} />)}
+          {data.sections.map(mapLandingPageSections)}
           <DefaultFooter/>
         </main>
       </div>

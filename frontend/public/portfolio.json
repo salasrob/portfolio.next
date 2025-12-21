@@ -133,6 +133,7 @@
                     "isPreviewContent": true
                 }
             ],
+            "isLandingPageSection": true,
             "externalLink": {
                 "title": "View Full Résumé",
                 "href": "/Rob_Salas_Software_Engineer.pdf",
@@ -313,11 +314,35 @@
                     "isPreviewContent": true
                 }
             ],
+            "isLandingPageSection": true,
             "externalLink": {
                 "title": "View Full Project Archive",
                 "href": "/archive",
                 "download": false
             }
+        },
+        {
+            "header": "Blog",
+            "contentComponents":[
+                {
+                    "title": "Coming soon",
+                    "href": "/archive",
+                    "company": "",
+                    "date": "2025",
+                    "subtitle": "",
+                    "description": "",
+                    "attachments": [],
+                    "badges": [
+                        {
+                            "label": "C++"
+                        }],
+                    "image": {
+                        "altText": "",
+                        "src": ""
+                    },
+                    "isPreviewContent": true
+                }],
+            "isLandingPageSection": false
         }
     ]
 }

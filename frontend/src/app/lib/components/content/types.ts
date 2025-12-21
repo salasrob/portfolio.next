@@ -34,9 +34,25 @@ interface LandingPageSectionProps{
     };
 }
 
+enum DeviceSize {
+    Small,
+    Medium,
+    Large,
+  }
+
+interface DeviceProps{
+    size: DeviceSize
+}
+
+interface LabelProps{
+    label: string;
+    showOnDeviceSize?: DeviceProps;
+}
+
 interface TableProps {
-    columnLabels: string[];
+    columnLabels: LabelProps[];
     contentComponents: CardProps[];
 }
 
-export type { BadgeProps, CardProps, LandingPageSectionProps, TableProps };
+export { DeviceSize }
+export type { BadgeProps, CardProps, LandingPageSectionProps, TableProps, LabelProps, DeviceProps };
