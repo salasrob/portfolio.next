@@ -143,6 +143,44 @@
             "header": "Projects",
             "contentComponents":[
                 {
+                    "title": "Windows 11 Widgets Platform - Lock screen, Widget Board",
+                    "href": "https://blogs.windows.com/windows-insider/2025/11/04/announcing-windows-11-insider-preview-build-27982-canary-channel/",
+                    "company": "Microsoft",
+                    "date": "2025",
+                    "subtitle": "Widgets platform on Windows 11 provides an extensibility point for app developers to create widgets to show on Windows surfaces. One such surface is the Lock screen. Users can customize the widgets that show on lock screen. Widget Board is another surface that users use to customize and interact with widgets.",
+                    "description": "",
+                    "attachments": [
+                        {
+                            "title": "Widgets on Lock screen",
+                            "href": "https://support.microsoft.com/en-us/windows/customize-the-lock-screen-in-windows-81dab9b0-35cf-887c-84a0-6de8ef72bea0",
+                            "download": false
+                        },
+                        {
+                            "title": "Widgets Board",
+                            "href": "https://learn.microsoft.com/en-us/windows/apps/design/widgets/",
+                            "download": false
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "label": "C++"
+                        },
+                        {
+                            "label": "XAML"
+                        },
+                        {
+                            "label": "WinRT"
+                        },
+                        {
+                            "label": "Win32"
+                        }],
+                    "image": {
+                        "altText": "",
+                        "src": ""
+                    },
+                    "isPreviewContent": true
+                },
+                {
                     "title": "Windows 10 and Windows 11 Weather and more",
                     "href": "https://support.microsoft.com/en-us/windows/personalize-your-lock-screen-81dab9b0-35cf-887c-84a0-6de8ef72bea0",
                     "company": "Microsoft",
