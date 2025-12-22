@@ -24,7 +24,8 @@ export default function Archive() {
             <div className='lg:py-24'>
                 <a className='group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300' href='/'>{"<- "}Rob Salas</a>
                 <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>All projects</h1>
-                <Table columnLabels={[{label:"Year"}, {label:"Project"},
+                <Table columnLabels={[{label:"Year"}, 
+                                      {label:"Project"},
                                       {label:"Made at", showOnDeviceSize: {size: DeviceSize.Large}},
                                       {label:"Built with", showOnDeviceSize: {size: DeviceSize.Large}},
                                       {label:"Link", showOnDeviceSize: {size: DeviceSize.Small}}]} 

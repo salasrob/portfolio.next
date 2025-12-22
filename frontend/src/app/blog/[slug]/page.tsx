@@ -21,7 +21,7 @@ const getContentComponents = () => {
 
 export async function generateStaticParams() {
   const content = getContentComponents();
-  const slugs = content.map((item: any) => ({ slug: item.href }));
+  const slugs = content.map((item: any) => ({ slug: item.slug }));
   return slugs
 }
 

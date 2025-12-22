@@ -325,8 +325,9 @@
             "header": "Blog",
             "contentComponents":[
                 {
-                    "title": "",
-                    "href": "my-first-blog",
+                    "title": "Test post",
+                    "href": "/blog/my-first-blog",
+                    "slug": "my-first-blog",
                     "company": "",
                     "date": "2025",
                     "subtitle": "",
