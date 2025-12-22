@@ -22,8 +22,8 @@ export default function Blog() {
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
             <div className='lg:py-24'>
                 <a className='group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300' href='/'>{"<- "}Rob Salas</a>
-                <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>Life as it occurs</h1>
-                <Table columnLabels={[{label:"Post date"}, {label:"Title"}, {label:"Tag"}]} contentComponents={getContentComponents()} />
+                <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>Life as it occurs to me</h1>
+                <Table columnLabels={[{label:"Post date"}, {label:"Tag"}, {label:"Title"}]} contentComponents={getContentComponents()} />
             </div>
         </div>
     )

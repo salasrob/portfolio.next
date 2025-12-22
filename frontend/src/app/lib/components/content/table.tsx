@@ -39,19 +39,20 @@ const Table: React.FC<TableProps> = ({ columnLabels, contentComponents }) => {
             <tbody>
                 {contentComponents.map((element, index) =>
                     <tr key={index} className="py-4 pr-8 text-sm font-semibold text-slate-200">
-                        <td className="py-4 pr-4 align-top text-sm">
-                            <div className="translate-y-px">{element.date}</div>
-                        </td>
-                        <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
-                            <div>
-                                <div className="block sm:hidden">
-                                    <a href={element.href} className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 hover:text-slate-200 focus-visible:text-teal-300 sm:hidden group/link text-base" target="_blank">
-                                        <span className="inline-block">{element.title}</span>
-                                    </a>
-                                </div>
-                                <div className="hidden sm:block">{element.title}</div>
-                            </div>
-                        </td>
+                        { element.date ? <td className="py-4 pr-4 align-top text-sm">
+                                            <div className="translate-y-px">{element.date}</div>
+                                         </td> : null }
+                        { element.title ? <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
+                                            <div>
+                                                <div className="block sm:hidden">
+                                                    <a href={element.href} className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 hover:text-slate-200 focus-visible:text-teal-300 sm:hidden group/link text-base" target="_blank">
+                                                        <span className="inline-block">{element.title}</span>
+                                                    </a>
+                                                </div>
+                                                <div className="hidden sm:block">{element.title}</div>
+                                            </div>
+                                          </td> : null }
+
                         { element.company ? <td className="hidden py-4 pr-4 align-top text-sm lg:table-cell">
                                                 <div className="translate-y-px whitespace-nowrap">{element.company}</div>
                                             </td>

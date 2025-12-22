@@ -325,13 +325,19 @@
             "header": "Blog",
             "contentComponents":[
                 {
-                    "title": "Coming soon",
-                    "href": "/archive",
+                    "title": "",
+                    "href": "my-first-blog",
                     "company": "",
                     "date": "2025",
                     "subtitle": "",
                     "description": "",
-                    "attachments": [],
+                    "attachments": [
+                        {
+                            "title": "First Blog",
+                            "href": "/blog/my-first-blog",
+                            "download": false
+                        }
+                    ],
                     "badges": [
                         {
                             "label": "C++"
