@@ -27,7 +27,7 @@ export default function Archive() {
                                       {label:"Project"},
                                       {label:"Made at", showOnDeviceSize: {size: DeviceSize.Large}},
                                       {label:"Built with", showOnDeviceSize: {size: DeviceSize.Large}},
-                                      {label:"Link", showOnDeviceSize: {size: DeviceSize.Small}}]} 
+                                      {label:"Link", showOnDeviceSize: {size: DeviceSize.Large}}]} 
                        contentComponents={getContentComponents()} />
             </div>
         </div>
