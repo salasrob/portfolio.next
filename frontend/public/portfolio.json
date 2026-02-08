@@ -16,6 +16,10 @@
         {
             "title": "Projects",
             "href": "#projects"
+        },
+        {
+            "title": "Blog",
+            "href": "/blog"
         }
     ],
     "socialLinks": [{
@@ -48,6 +52,9 @@
                     "badges": [
                     {
                         "label": "C++"
+                    },
+                                        {
+                        "label": "C#"
                     },
                     {
                         "label": "XAML"
@@ -325,23 +332,26 @@
             "header": "Blog",
             "contentComponents":[
                 {
-                    "title": "Test post",
-                    "href": "/blog/my-first-blog",
-                    "slug": "my-first-blog",
+                    "title": "Writing about life as it occurs to me",
+                    "href": "/blog/Writing-about-life-as-it-occurs-to-me",
+                    "slug": "Writing-about-life-as-it-occurs-to-me",
                     "company": "",
                     "date": "2025",
                     "subtitle": "",
                     "description": "",
                     "attachments": [
                         {
-                            "title": "First Blog",
-                            "href": "/blog/my-first-blog",
+                            "title": "View",
+                            "href": "/blog/Writing-about-life-as-it-occurs-to-me",
                             "download": false
                         }
                     ],
                     "badges": [
                         {
-                            "label": "C++"
+                            "label": "Writing"
+                        },
+                        {
+                            "label": "Free thinking"
                         }],
                     "image": {
                         "altText": "",
