@@ -8,7 +8,6 @@ let data = JSON.parse(file);
 
 const getContentComponents = () => {
     let len = data.sections.length;
-    debugger;
     for (let index = 0; index < len; index++) {
         let section = data.sections[index];
         if (section.header == "Projects") {
