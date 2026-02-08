@@ -13,10 +13,12 @@ export default async function MarkdownContentContainer({ filePath }: MarkdownCon
   const file = await fs.readFile(fullPath, 'utf8')
 
   return (
-    <section className="prose prose-invert max-w-none">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-        {file}
-      </ReactMarkdown>
+    <section className="prose prose-invert max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 py-6 overflow-x-hidden">
+      <div className="overflow-x-auto">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {file}
+        </ReactMarkdown>
+      </div>
     </section>
   )
 }
