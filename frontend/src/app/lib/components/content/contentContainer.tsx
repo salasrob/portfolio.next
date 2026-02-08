@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 export default function ContentContainer({ content }: { content: ReactNode }) {
   return (
     <article style={{
-            border: '2px solid red',
+            border: '2px solid teal',
             padding: '1rem',
             borderRadius: '0.5rem',
             marginTop: '1rem' }}>
