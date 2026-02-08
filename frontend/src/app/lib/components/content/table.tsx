@@ -1,4 +1,7 @@
 
+"use client";
+
+import Link from "next/link";
 import { TableProps, LabelProps, DeviceSize } from "../content/types";
 
 function mapColumnLabels(columnLabel:LabelProps, index:number) {
@@ -30,7 +33,7 @@ function mapColumnLabels(columnLabel:LabelProps, index:number) {
 
 const Table: React.FC<TableProps> = ({ columnLabels, contentComponents }) => {
     return (
-        <table className="mt-12 w-full border-collapse text-left">
+        <table className="mt-12 w-full border-collapse text-left table-fixed">
             <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
                 <tr>
                     {columnLabels.map(mapColumnLabels)}
@@ -44,12 +47,14 @@ const Table: React.FC<TableProps> = ({ columnLabels, contentComponents }) => {
                                          </td> : null }
                         { element.title ? <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
                                             <div>
-                                                <div className="block sm:hidden">
-                                                    <a href={element.href} className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 hover:text-slate-200 focus-visible:text-teal-300 sm:hidden group/link text-base" target="_blank">
-                                                        <span className="inline-block">{element.title}</span>
-                                                    </a>
+                                                <div className="block lg:hidden">
+                                                  <Link
+                                                    href={element.href!}
+                                                    className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base">
+                                                    <span className="inline-block">{element.title}</span>
+                                                  </Link>
                                                 </div>
-                                                <div className="hidden sm:block">{element.title}</div>
+                                                <div className="hidden lg:block">{element.title}</div>
                                             </div>
                                           </td> : null }
 
@@ -57,14 +62,14 @@ const Table: React.FC<TableProps> = ({ columnLabels, contentComponents }) => {
                                                 <div className="translate-y-px whitespace-nowrap">{element.company}</div>
                                             </td>
                                             : null }
-                        { element.badges ? <td className="hidden py-4 pr-4 align-top lg:table-cell">
+                        { element.badges ? <td className="hidden py-4 pr-4 align-top whitespace-normal min-w-0 lg:table-cell">
                                                 <ul className="flex -translate-y-1.5 flex-wrap">{element.badges?.map((element, index) =>
                                                     <li key={index} className="my-1 mr-1.5">
                                                         <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{element.label}</div>
                                                     </li>)}
                                                 </ul>
                                             </td> : null }
-                        { element.attachments ? <td className="hidden py-4 align-top sm:table-cell">
+                        { element.attachments ? <td className="hidden py-4 align-top lg:table-cell">
                                                     <ul className="translate-y-1">{element.attachments?.map((element, index) =>
                                                         <li key={index} className="mb-1 flex items-center">
                                                             <a href={element.href} className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-teal-300 group/link text-sm" target="_blank">
