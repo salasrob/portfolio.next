@@ -2,7 +2,7 @@ import { LinkProps } from "./types";
 
 const ExternalPageNavigation: React.FC<LinkProps> = ({ title, href, download }) => {
   return (
-    <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href={href} download={download}>
+    <a className="inline-flex items-baseline font-medium leading-tight text-stone-200 hover:text-od-400 focus-visible:text-od-400 font-semibold text-stone-200 group/link text-base" href={href} download={download}>
     <span>
       {title}
       <span className="inline-block">

@@ -3,7 +3,7 @@ import { SocialProps } from "./types";
 const SocialLink: React.FC<SocialProps> = ({ title, href, viewBox, src }) => {
     return (
         <li className="mr-5 text-xs">
-            <a className="block hover:text-slate-200" href={href}>
+            <a className="block hover:text-stone-200" href={href}>
                 <span className="sr-only">
                     {title}
                 </span>

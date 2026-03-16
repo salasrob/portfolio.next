@@ -28,7 +28,7 @@ export default function Post({ params }: { params: { slug: string } }) {
   return (
     <main>
       <div className="max-w-7xl mx-auto px-4">
-        <a className='group mb-2 inline-flex items-center font-semibold leading-tight text-teal-300' href='/blog'>{"<- "}Life as it occurs to me</a>
+        <a className='group mb-2 inline-flex items-center font-semibold leading-tight text-od-400' href='/blog'>{"<- "}Life as it occurs to me</a>
         <ContentContainer content={<MarkdownContentContainer filePath={`${publicsFilePath}/${params.slug}.md`}/>} />
       </div>
     </main>

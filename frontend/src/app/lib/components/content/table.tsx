@@ -5,7 +5,7 @@ import Link from "next/link";
 import { TableProps, LabelProps, DeviceSize } from "../content/types";
 
 function mapColumnLabels(columnLabel:LabelProps, index:number) {
-    const baseLabelStyle = "py-4 pr-8 text-sm font-semibold text-slate-200";
+    const baseLabelStyle = "py-4 pr-8 text-sm font-semibold text-stone-200";
     var appliedClass = "";
 
     if (columnLabel.showOnDeviceSize?.size == DeviceSize.Small){
@@ -34,23 +34,23 @@ function mapColumnLabels(columnLabel:LabelProps, index:number) {
 const Table: React.FC<TableProps> = ({ columnLabels, contentComponents }) => {
     return (
         <table className="mt-12 w-full border-collapse text-left table-fixed">
-            <thead className="sticky top-0 z-10 border-b border-slate-300/10 bg-slate-900/75 px-6 py-5 backdrop-blur">
+            <thead className="sticky top-0 z-10 border-b-2 border-stone-600 bg-od-950/75 px-6 py-5 backdrop-blur">
                 <tr>
                     {columnLabels.map(mapColumnLabels)}
                 </tr>
             </thead>
             <tbody>
                 {contentComponents.map((element, index) =>
-                    <tr key={index} className="py-4 pr-8 text-sm font-semibold text-slate-200">
+                    <tr key={index} className="py-4 pr-8 text-sm font-semibold text-stone-200">
                         { element.date ? <td className="py-4 pr-4 align-top text-sm">
                                             <div className="translate-y-px">{element.date}</div>
                                          </td> : null }
-                        { element.title ? <td className="py-4 pr-4 align-top font-semibold leading-snug text-slate-200">
+                        { element.title ? <td className="py-4 pr-4 align-top font-semibold leading-snug text-stone-200">
                                             <div>
                                                 <div className="block lg:hidden">
                                                   <Link
                                                     href={element.href!}
-                                                    className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base">
+                                                    className="inline-flex items-baseline font-medium leading-tight text-stone-200 hover:text-od-400 focus-visible:text-od-400 group/link text-base">
                                                     <span className="inline-block">{element.title}</span>
                                                   </Link>
                                                 </div>
@@ -65,14 +65,14 @@ const Table: React.FC<TableProps> = ({ columnLabels, contentComponents }) => {
                         { element.badges ? <td className="hidden py-4 pr-4 align-top whitespace-normal min-w-0 lg:table-cell">
                                                 <ul className="flex -translate-y-1.5 flex-wrap">{element.badges?.map((element, index) =>
                                                     <li key={index} className="my-1 mr-1.5">
-                                                        <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{element.label}</div>
+                                                        <div className="flex items-center rounded-full bg-od-400/10 px-3 py-1 text-xs font-medium leading-5 text-od-400 ">{element.label}</div>
                                                     </li>)}
                                                 </ul>
                                             </td> : null }
                         { element.attachments ? <td className="hidden py-4 align-top lg:table-cell">
                                                     <ul className="translate-y-1">{element.attachments?.map((element, index) =>
                                                         <li key={index} className="mb-1 flex items-center">
-                                                            <a href={element.href} className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-sm text-slate-400 hover:text-slate-200 focus-visible:text-teal-300 group/link text-sm" target="_blank">
+                                                            <a href={element.href} className="inline-flex items-baseline font-medium leading-tight text-stone-200 hover:text-od-400 focus-visible:text-od-400 text-sm text-stone-400 hover:text-stone-200 focus-visible:text-od-400 group/link text-sm" target="_blank">
                                                                 <span>
                                                                     <span className="inline-block">
                                                                         {element.title}
