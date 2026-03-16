@@ -26,7 +26,8 @@ At the end of the day if you get something out of it great, if not that's okay t
 
 I don't provide a way to interact with the posts. I don't plan to currently but I'm toying with the idea. If you do want to connect over any of these topics. Feel free to reach out to me over good old fashion email or LinkedIn. I sometimes get a barrage of messages so if you do reach out put the title in the subject line and that will stick out to me when I'm checking my messages.
 
-# Email: [robertjsalas1@gmail](mailto:robertjsalas1@gmail.com)
-# LinkedIn: [https://www.linkedin.com/in/robertsalas/](https://www.linkedin.com/in/robertsalas/)  
+**Email:** [robertjsalas1@gmail](mailto:robertjsalas1@gmail.com)
+
+**LinkedIn:** [https://www.linkedin.com/in/robertsalas/](https://www.linkedin.com/in/robertsalas/)  
 
 -rob
