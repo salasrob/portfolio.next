@@ -3,16 +3,77 @@
 
 @import 'highlight.js/styles/github-dark.css';
 
-@theme {
-  --color-od-50: #f5f6f0;
-  --color-od-100: #e8eadd;
-  --color-od-200: #d0d4b8;
-  --color-od-300: #b3ba8d;
-  --color-od-400: #8f9a5b;
-  --color-od-500: #6b7a3d;
-  --color-od-600: #4b5320;
-  --color-od-700: #3d4420;
-  --color-od-800: #2a3018;
-  --color-od-900: #1a2010;
-  --color-od-950: #1c3a1c;
+@theme inline {
+  --color-od-50: var(--theme-od-50);
+  --color-od-100: var(--theme-od-100);
+  --color-od-200: var(--theme-od-200);
+  --color-od-300: var(--theme-od-300);
+  --color-od-400: var(--theme-od-400);
+  --color-od-500: var(--theme-od-500);
+  --color-od-600: var(--theme-od-600);
+  --color-od-700: var(--theme-od-700);
+  --color-od-800: var(--theme-od-800);
+  --color-od-900: var(--theme-od-900);
+  --color-od-950: var(--theme-od-950);
+}
+
+/* Forest Green (default) */
+:root,
+[data-theme="forest"] {
+  --theme-od-50: #f5f6f0;
+  --theme-od-100: #e8eadd;
+  --theme-od-200: #d0d4b8;
+  --theme-od-300: #b3ba8d;
+  --theme-od-400: #8f9a5b;
+  --theme-od-500: #6b7a3d;
+  --theme-od-600: #4b5320;
+  --theme-od-700: #3d4420;
+  --theme-od-800: #2a3018;
+  --theme-od-900: #1a2010;
+  --theme-od-950: #1c3a1c;
+}
+
+/* Slate Blue (original theme) */
+[data-theme="slate"] {
+  --theme-od-50: #f8fafc;
+  --theme-od-100: #f1f5f9;
+  --theme-od-200: #e2e8f0;
+  --theme-od-300: #94a3b8;
+  --theme-od-400: #5eead4;
+  --theme-od-500: #14b8a6;
+  --theme-od-600: #0d9488;
+  --theme-od-700: #1e293b;
+  --theme-od-800: #1e293b;
+  --theme-od-900: #0f172a;
+  --theme-od-950: #0f172a;
+}
+
+/* Ember (red-orange) */
+[data-theme="ember"] {
+  --theme-od-50: #fef2f2;
+  --theme-od-100: #fee2e2;
+  --theme-od-200: #fecaca;
+  --theme-od-300: #d4a574;
+  --theme-od-400: #f97316;
+  --theme-od-500: #ea580c;
+  --theme-od-600: #9a3412;
+  --theme-od-700: #5c2510;
+  --theme-od-800: #3b1a0e;
+  --theme-od-900: #2a1410;
+  --theme-od-950: #1c0e09;
+}
+
+/* High Contrast (accessibility) */
+[data-theme="high-contrast"] {
+  --theme-od-50: #ffffff;
+  --theme-od-100: #ffffff;
+  --theme-od-200: #f0f0f0;
+  --theme-od-300: #e0e0e0;
+  --theme-od-400: #ffff00;
+  --theme-od-500: #cccc00;
+  --theme-od-600: #666600;
+  --theme-od-700: #333300;
+  --theme-od-800: #1a1a00;
+  --theme-od-900: #0a0a00;
+  --theme-od-950: #000000;
 }

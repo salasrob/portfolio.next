@@ -1,5 +1,6 @@
 import InsidePageNavigation from "./lib/components/buttons/insidePageNavigation";
 import SocialLink from "./lib/components/buttons/socialLink";
+import ThemeSwitcher from "./lib/components/buttons/themeSwitcher";
 import Section from "./lib/components/content/section";
 
 // TODO: Use express to fetch json
@@ -57,6 +58,7 @@ export default function Home() {
           <DefaultFooter/>
         </main>
       </div>
+      <ThemeSwitcher />
     </div>
   )
 }
