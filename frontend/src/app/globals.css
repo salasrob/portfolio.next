@@ -1,27 +1,18 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @import 'highlight.js/styles/github-dark.css';
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-.text-sm {
-  font-size: .875rem;
-  line-height: 1.25rem;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-sans {
-  font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-feature-settings: "ss03","cv02","cv11";
+@theme {
+  --color-od-50: #f5f6f0;
+  --color-od-100: #e8eadd;
+  --color-od-200: #d0d4b8;
+  --color-od-300: #b3ba8d;
+  --color-od-400: #8f9a5b;
+  --color-od-500: #6b7a3d;
+  --color-od-600: #4b5320;
+  --color-od-700: #3d4420;
+  --color-od-800: #2a3018;
+  --color-od-900: #1a2010;
+  --color-od-950: #1c3a1c;
 }

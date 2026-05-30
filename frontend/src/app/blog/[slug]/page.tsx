@@ -24,12 +24,13 @@ export async function generateStaticParams() {
   return slugs
 }
 
-export default function Post({ params }: { params: { slug: string } }) {
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   return (
     <main>
       <div className="max-w-7xl mx-auto px-4">
         <a className='group mb-2 inline-flex items-center font-semibold leading-tight text-od-400' href='/blog'>{"<- "}Life as it occurs to me</a>
-        <ContentContainer content={<MarkdownContentContainer filePath={`${publicsFilePath}/${params.slug}.md`}/>} />
+        <ContentContainer content={<MarkdownContentContainer filePath={`${publicsFilePath}/${slug}.md`}/>} />
       </div>
     </main>
   )

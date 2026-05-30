@@ -46,10 +46,10 @@ export default function Home() {
             <div>
               <p>Shortly after leaving the U.S. Army I decided to go back to college. Four years later I was completing an MBA program and decided to jump into coding and never looked back. Today, I design and build accessible, performant, and engaging experiences for Windows Shell.
               </p>
-              <p>I value building things that are useful and that can be used by everyone. Data privacy, safe and responsible use of Artificial Intelligence, and contributing to empowering humans is important to me.
+              <p>I value building things that are useful and that can be used by everyone. Data privacy, Free thinking, and protecting our natural world is important to me.
               </p>
               <p>
-                When I&apos;m not working, I&apos;m usually practicing Brazilian Jiu Jitsu, hiking, playing with legos with my kids, or playing computer games.
+                When I&apos;m not working, I&apos;m usually practicing Brazilian Jiu Jitsu, hiking, or spending time with my family.
               </p>
             </div>
           </section>
