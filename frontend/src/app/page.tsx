@@ -1,3 +1,4 @@
+import AiChat from "./lib/components/chat/aiChat";
 import InsidePageNavigation from "./lib/components/buttons/insidePageNavigation";
 import Link from "next/link";
 import SocialLink from "./lib/components/buttons/socialLink";
@@ -35,6 +36,7 @@ export default function Home() {
                 {data.internalNavigationLinks.map((element: any, index: any) => <InsidePageNavigation key={index} title={element.title} href={element.href} download={element.download} />)}
               </ul>
             </nav>
+            <AiChat context={JSON.stringify({ name: data.name, jobTitle: data.jobTitle, company: data.company, sections: data.sections?.map((s: any) => ({ header: s.header, contentComponents: s.contentComponents?.map((c: any) => ({ title: c.title, company: c.company, description: c.description, date: c.date, badges: c.badges })) })) })} />
           </div>
           <ul className="ml-1 mt-8 flex items-center">
             {data.socialLinks.map((element: any, index: any) => <SocialLink key={index} title={element.title} href={element.href} viewBox={element.viewBox} src={element.src} download={element.download} />)}
