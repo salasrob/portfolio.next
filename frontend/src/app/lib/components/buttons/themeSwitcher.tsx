@@ -6,6 +6,8 @@ const themes = [
   { id: 'forest', label: 'Forest', color: '#1c3a1c' },
   { id: 'slate', label: 'Slate', color: '#0f172a' },
   { id: 'ember', label: 'Ember', color: '#2a1410' },
+  { id: 'light', label: 'Light', color: '#f8faf7' },
+  { id: 'colorblind', label: 'Color-Blind Safe', color: '#091a2a' },
   { id: 'high-contrast', label: 'High Contrast', color: '#000000' },
 ]
 
