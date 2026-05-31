@@ -222,6 +222,39 @@
                     "isPreviewContent": true
                 },
                 {
+                    "title": "Windows 11 File Explorer Pivot Views",
+                    "href": "https://blogs.windows.com/windows-insider/2025/04/10/releasing-windows-11-build-26100-3902-to-the-release-preview-channel/",
+                    "company": "Microsoft",
+                    "date": "2024",
+                    "subtitle": "Fun fact did you know File Explorer is the most popular app in Windows? File Explorer Pivot curated views are focused views within File Explorer Home that let you drill into a specific category of graph items (Recents, Favorites, Shared, and for enterprise accounts Recommended). Yay, no more scrolling to see my favorites.",
+                    "description": "",
+                    "attachments": [
+                        {
+                            "title": "File Explorer Pivot Views",
+                            "href": "https://blogs.windows.com/windows-insider/2025/04/10/releasing-windows-11-build-26100-3902-to-the-release-preview-channel/",
+                            "download": false
+                        }
+                    ],
+                    "badges": [
+                        {
+                            "label": "C++"
+                        },
+                        {
+                            "label": "XAML"
+                        },
+                        {
+                            "label": "WinRT"
+                        },
+                        {
+                            "label": "Win32"
+                        }],
+                    "image": {
+                        "altText": "",
+                        "src": ""
+                    },
+                    "isPreviewContent": true
+                },
+                {
                     "title": "Windows 11 Context Menu Access Keys",
                     "href": "https://blogs.windows.com/windows-insider/2023/03/08/announcing-windows-11-insider-preview-build-25314/",
                     "company": "Microsoft",
