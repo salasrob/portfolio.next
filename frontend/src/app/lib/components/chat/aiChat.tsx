@@ -184,6 +184,12 @@ Additional values: Robert values data privacy, free thinking, and protecting our
     if (engineRef.current) {
       engineRef.current.interruptGenerate()
     }
+    // Force reset after a short delay if the stream doesn't stop naturally
+    setTimeout(() => {
+      setIsGenerating(false)
+      setIsCancelling(false)
+      abortRef.current = null
+    }, 1500)
   }
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
