@@ -1,8 +1,12 @@
+import Link from "next/link";
 import { LinkProps } from "./types";
 
 const ExternalPageNavigation: React.FC<LinkProps> = ({ title, href, download }) => {
+  const isInternal = href?.startsWith('/') && !download;
+  const Tag = isInternal ? Link : 'a';
+
   return (
-    <a className="inline-flex items-baseline font-medium leading-tight text-stone-200 hover:text-od-400 focus-visible:text-od-400 font-semibold text-stone-200 group/link text-base" href={href} download={download}>
+    <Tag className="inline-flex items-baseline font-medium leading-tight text-stone-200 hover:text-od-400 focus-visible:text-od-400 font-semibold text-stone-200 group/link text-base" href={href!} download={download}>
     <span>
       {title}
       <span className="inline-block">
@@ -12,7 +16,7 @@ const ExternalPageNavigation: React.FC<LinkProps> = ({ title, href, download }) 
         </svg>
       </span>
     </span>
-  </a>
+  </Tag>
   );
 };
   

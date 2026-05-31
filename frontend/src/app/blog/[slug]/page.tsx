@@ -1,5 +1,6 @@
 import ContentContainer from '@/app/lib/components/content/contentContainer'
 import MarkdownContentContainer from '@/app/lib/components/content/markdownContentContainer';
+import Link from 'next/link';
 
 import { promises as fs } from 'fs'
 
@@ -29,7 +30,7 @@ export default async function Post({ params }: { params: Promise<{ slug: string 
   return (
     <main>
       <div className="max-w-7xl mx-auto px-4">
-        <a className='group mb-2 inline-flex items-center font-semibold leading-tight text-od-400' href='/blog'>{"<- "}Life as it occurs to me</a>
+        <Link className='group mb-2 inline-flex items-center font-semibold leading-tight text-od-400' href='/blog'>{"<- "}Life as it occurs to me</Link>
         <ContentContainer content={<MarkdownContentContainer filePath={`${publicsFilePath}/${slug}.md`}/>} />
       </div>
     </main>

@@ -1,4 +1,5 @@
 import InsidePageNavigation from "./lib/components/buttons/insidePageNavigation";
+import Link from "next/link";
 import SocialLink from "./lib/components/buttons/socialLink";
 import ThemeSwitcher from "./lib/components/buttons/themeSwitcher";
 import Section from "./lib/components/content/section";
@@ -23,7 +24,7 @@ export default function Home() {
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
           <div>
             <h1 className="text-4xl font-bold tracking-tight text-stone-200 sm:text-5xl">
-              <a href="/">{data.name}</a>
+              <Link href="/">{data.name}</Link>
             </h1>
             <h2 className="mt-3 text-lg font-medium tracking-tight text-stone-200 sm:text-xl">
               {data.jobTitle} at {data.company}
