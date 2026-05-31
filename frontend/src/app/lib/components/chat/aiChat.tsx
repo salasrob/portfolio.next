@@ -197,7 +197,7 @@ Additional values: Robert values data privacy, free thinking, and protecting our
     return null
   }
 
-  // Collapsed state — show a clickable bar
+   // Collapsed state — show a clickable bar
   if (!isExpanded) {
     return (
       <div className="mt-8 hidden lg:block max-w-sm">
@@ -209,7 +209,7 @@ Additional values: Robert values data privacy, free thinking, and protecting our
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4">
               <path d="M12 2a1 1 0 011 1v3.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L11 6.586V3a1 1 0 011-1zM4.5 9A2.5 2.5 0 002 11.5v7A2.5 2.5 0 004.5 21h15a2.5 2.5 0 002.5-2.5v-7A2.5 2.5 0 0019.5 9h-15zM8 14a1 1 0 100-2 1 1 0 000 2zm5-1a1 1 0 11-2 0 1 1 0 012 0zm3 1a1 1 0 100-2 1 1 0 000 2z" />
             </svg>
-            Ask about Rob (Powered by Phi-3.5 Mini)
+            {isCached ? 'Ask about Rob (Powered by Phi-3.5 Mini)' : 'Load AI Chat'}
           </span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
             <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
@@ -237,12 +237,15 @@ Additional values: Robert values data privacy, free thinking, and protecting our
               </svg>
             </button>
           </div>
-          <div className="flex items-center gap-2 px-3 py-6 text-sm text-od-400">
-            <svg className="h-4 w-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
-            </svg>
-            <span className="text-xs">{progress || 'Initializing...'}</span>
+          <div className="flex flex-col gap-1 px-4 py-6">
+            <div className="flex items-center gap-2 text-sm text-od-400">
+              <svg className="h-4 w-4 animate-spin" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+              </svg>
+              <span className="text-xs font-medium">{isCached ? 'Loading from cache...' : 'Downloading model...'}</span>
+            </div>
+            <p className="mt-1 text-xs text-stone-500 break-words">{progress || 'Initializing...'}</p>
           </div>
         </div>
       </div>
